@@ -4,7 +4,7 @@ OpenCV was started at Intel in the year 1999 by **Gary Bradsky**. The first rele
 
 Face detection using Haar cascades is a machine learning based approach where a cascade function is trained with a set of input data. OpenCV already contains many pre-trained classifiers for face, eyes, smiles, etc.. Now we will be using the face classifier. 
 
-## We need the folowing packages
+## How to install packages
 
 ![GIF lib](https://user-images.githubusercontent.com/109785046/210296017-6b7d292d-1852-410d-921d-cbe089e3009e.gif)
 
