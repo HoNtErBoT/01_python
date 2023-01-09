@@ -14,7 +14,7 @@ Face detection using Haar cascades is a machine learning based approach where a 
 
 # 01_Face counting
 
-Here in this program we are counting number of faces detected in our webcam
+Here in this program we are counting number of faces detected in our webcam/RTSP
 
 
 
