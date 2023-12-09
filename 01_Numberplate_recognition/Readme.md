@@ -7,3 +7,11 @@ https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-5.3.3.2023100
 
 ![image](https://github.com/HoNtErBoT/01_python/assets/109785046/97c21232-9735-4f49-a4aa-672d552dcd4c)
 
+# install in terminal 
+
+pip install pytesseract
+
+![image](https://github.com/HoNtErBoT/01_python/assets/109785046/a29b7c1d-5dc0-4b7c-b19b-e48dac5330b1)
+
+
+
