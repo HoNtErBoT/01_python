@@ -74,3 +74,29 @@ Here's a brief summary of your code:
 ![ezgif com-video-to-gif-converted](https://github.com/HoNtErBoT/01_python/assets/109785046/a2a3ac33-7c15-4fd3-90a5-375083165c48)
 
 
+# Rescale image
+
+
+```diff
+
+import cv2
+
+
+def rescaleFrame(frame, scale=0.75):
+    width = int(frame.shape[1])
+    height = int(frame.shape[0])
+    print(f'width : {width}   height : {height}')
+
+    width = int(frame.shape[1] * scale)
+    height = int(frame.shape[0] * scale)
+    print(f'width : {width}   height : {height}')
+    return cv2.resize(frame, (width, height))
+
+
+img = cv2.imread('RES/CAR.jpg')
+img = rescaleFrame(img, .25)
+cv2.imshow('CAR', img)
+cv2.waitKey(0)
+
+```
+
