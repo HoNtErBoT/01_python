@@ -27,5 +27,37 @@ The cv2.waitKey(0) function in the provided code is a command that makes the pro
 
 ![image](https://github.com/HoNtErBoT/01_python/assets/109785046/caecd907-dc1b-4093-b33f-3ef710c3dc8c)
 
+# Reading Video
+
+```diff
+
+import cv2
+video_path = 'img/car.mp4'
+cap = cv2.VideoCapture(video_path)
+if not cap.isOpened():
+    print("Error: Couldn't open the video file.")
+    exit()
+width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+fps = cap.get(cv2.CAP_PROP_FPS)
+
+print(f"Video Resolution: {width} x {height}")
+print(f"Frames Per Second: {fps}")
+desired_width, desired_height = 640, 320
+while True:
+    ret, frame = cap.read()
+    if not ret:
+        print("Video playback complete.")
+        break
+    frame = cv2.resize(frame, (desired_width, desired_height))
+    cv2.imshow('Video', frame)
+    if cv2.waitKey(25) & 0xFF == ord('q'):
+        break
+cap.release()
+cv2.destroyAllWindows()
+
+```
+
+![ezgif com-video-to-gif-converted](https://github.com/HoNtErBoT/01_python/assets/109785046/a2a3ac33-7c15-4fd3-90a5-375083165c48)
 
 
