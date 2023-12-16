@@ -56,6 +56,19 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 
+
+Here's a brief summary of your code:
+
+1 - Open the video file using cv2.VideoCapture.
+2 - Check if the video file opened successfully.
+3 - Retrieve and print the video resolution and frames per second.
+4 - Set the desired width and height for the displayed video frames.
+5 - Enter a loop to read and display each frame.
+6 - Resize each frame to the desired width and height.
+7 - Display the resized frame using cv2.imshow.
+8 - Break the loop if the 'q' key is pressed.
+9 - Release the video capture object and close the display window when the loop ends.
+
 ```
 
 ![ezgif com-video-to-gif-converted](https://github.com/HoNtErBoT/01_python/assets/109785046/a2a3ac33-7c15-4fd3-90a5-375083165c48)
