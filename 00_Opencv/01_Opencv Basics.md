@@ -100,3 +100,34 @@ cv2.waitKey(0)
 
 ```
 
+# Rescale Video
+
+```diff
+
+import cv2
+
+
+def rescaleFrame(frame, scale=0.75):
+    width = int(frame.shape[1] * scale)
+    height = int(frame.shape[0] * scale)
+    print(f'width : {width}   height : {height}')
+    return cv2.resize(frame, (width, height))
+
+
+cap = cv2.VideoCapture(0)
+while True:
+    ret, frame = cap.read()
+    if not ret:
+        print("Video playback complete.")
+        break
+    frame = rescaleFrame(frame, 0.5)
+    cv2.imshow('Video', frame)
+    if cv2.waitKey(25) & 0xFF == ord('q'):
+        break
+cap.release()
+cv2.destroyAllWindows()
+
+
+
+```
+
