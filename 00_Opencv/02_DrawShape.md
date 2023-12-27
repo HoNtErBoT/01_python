@@ -34,7 +34,7 @@ cv2.waitKey(0)                      # Wait till a key press
 - **start_point:** This is a tuple specifying the starting coordinates (x, y) of the line.
 - **end_point:** This is a tuple specifying the ending coordinates (x, y) of the line.
 - **color_front:** This is a tuple representing the color of the line in BGR (Blue, Green, Red) format. Each color component is an integer ranging from 0 to 255.
-- **thickness:**This is an optional parameter that sets the thickness of the line. In the provided example, the thickness is set to 5 pixels.
+- **thickness:** This is an optional parameter that sets the thickness of the line. In the provided example, the thickness is set to 5 pixels.
 ### OUTPUT 
 
 ![image](https://github.com/HoNtErBoT/01_python/assets/109785046/954e5ddd-3687-48a5-a51e-ac91e73df92a)
