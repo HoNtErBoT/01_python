@@ -9,8 +9,8 @@ During this journey of learning OpenCV in Python, I have realised that we have t
 ```diff
 
 # Read Image
-import cv2                           # import opencv Library
-img = cv2.imread('img/op.png')       # Read image from the folder
+import cv2                                       # import opencv Library
+img = cv2.imread('img/op.png')                   # Read image from the folder
 
 
 # Get Image Dimensions
@@ -24,7 +24,7 @@ color_front = (0, 0, 255)
 cv2.line(img, start_point, end_point, color_front, thickness=5)
 
 cv2.imshow('HoNtEr OUTPUT Window', img)               # Display the image
-cv2.waitKey(0)                      # Wait till a key press
+cv2.waitKey(0)                                        # Wait till a key press
 
 ```
 
