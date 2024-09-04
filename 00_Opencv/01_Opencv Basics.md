@@ -160,6 +160,9 @@ cv2.destroyAllWindows()
 
 # Rectangle on an Image
 
+![image](https://github.com/user-attachments/assets/4739a507-e7d6-45ad-8214-6dcb9016cb90)
+
+
 ```diff
 
 import cv2
@@ -180,6 +183,9 @@ cv2.destroyAllWindows()
 
 
 # Circle on an Image
+
+![image](https://github.com/user-attachments/assets/dcce4a65-ef53-4e63-99a3-cdc6b2a83401)
+
 
 ```diff
 
@@ -207,6 +213,8 @@ cv2.destroyAllWindows()
 
 
 # Elipse on an Image
+![Screenshot 2024-09-04 104912](https://github.com/user-attachments/assets/d0409783-d0f3-4fcd-82ba-d0590aa719d4)
+
 
 ```diff
 
