@@ -133,3 +133,105 @@ cv2.destroyAllWindows()
 
 ```
 
+# Line on an Image
+
+```diff
+
+import cv2
+
+image_path = r'C:\Users\user\Documents\PYTHON\OPENCV\RES\Bird.jpg'
+image = cv2.imread(image_path)
+sh = image.shape
+print(sh)
+image = cv2.resize(image, (690, 380))
+
+
+cv2.line(image, (10, 10), (600, 10), (51, 125, 220), thickness=1)
+cv2.imshow('IMAGE', image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+
+
+
+```
+
+
+# Rectangle on an Image
+
+```diff
+
+import cv2
+
+image_path = 'Bird.jpg'
+image = cv2.imread(image_path)
+sh = image.shape
+print(sh)
+image = cv2.resize(image, (690, 380))
+
+cv2.rectangle(image, (60, 60), (100, 100), (0, 255, 0), thickness=2)
+cv2.imshow('IMAGE', image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+```
+
+
+# Circle on an Image
+
+```diff
+
+import cv2
+
+image_path = 'Bird.jpg'
+image = cv2.imread(image_path)
+sh = image.shape
+print(sh)
+image = cv2.resize(image, (690, 380))
+
+center = (280, 150)     # Center coordinates of the circle
+radius = 100            # Radius of the circle
+color = (0, 0, 255)     # Red color in BGR
+thickness = 2           # Thickness of the circle outline (use -1 for a filled circle)
+
+
+img = cv2.circle(image, center, radius, color, thickness)
+cv2.imshow('IMAGE', image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+```
+
+
+# Elipse on an Image
+
+```diff
+
+import cv2
+
+image_path = 'Bird.jpg'
+image = cv2.imread(image_path)
+sh = image.shape
+print(sh)
+image = cv2.resize(image, (690, 380))
+
+center = (300, 250)         # Center coordinates of the ellipse
+axes = (150, 100)           # Length of the major and minor axes
+angle = 30                  # Angle of rotation of the ellipse in degrees
+startAngle = 0              # Starting angle of the elliptic arc in degrees
+endAngle = 360              # Ending angle of the elliptic arc in degrees
+color = (255, 0, 0)         # Blue color in BGR
+thickness = 2               # Thickness of the ellipse outline (use -1 for a filled ellipse)
+
+image = cv2.ellipse(image, center, axes, angle, startAngle, endAngle, color, thickness)
+
+
+cv2.imshow('IMAGE', image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+```
